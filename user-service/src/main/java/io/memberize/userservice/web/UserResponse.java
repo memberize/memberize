@@ -4,20 +4,20 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 public class UserResponse {
-    private String message;
+	private String message;
 
-    public UserResponse() {
-    }
+	public UserResponse() {
+	}
 
-    public UserResponse(String message) {
-        this.message = message;
-    }
+	public UserResponse(String message) {
+		this.message = message;
+	}
 
-    public String getMessage() {
-        return message;
-    }
+	public String getMessage() {
+		return message;
+	}
 
-    public void setMessage(String message) {
-        this.message = message;
-    }
+	public void setMessage(String message) {
+		this.message = message;
+	}
 }

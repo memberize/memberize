@@ -3,5 +3,9 @@ spring:
     url: jdbc:mysql://${DOCKER_HOST_IP}/memberize?useSSL=false&useUnicode=yes&characterEncoding=UTF-8&allowPublicKeyRetrieval=true
     username: memberize
     password: memberizepw
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
 server:
   port: 5010
