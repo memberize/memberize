@@ -1,6 +1,6 @@
 buildscript {
   ext {
-    springBootVersion = '2.1.0.M2'
+    springBootVersion = '2.1.1.RELEASE'
   }
   repositories {
     mavenCentral()
@@ -24,7 +24,7 @@ apply plugin: 'io.spring.dependency-management'
 
 group = 'io.memberize'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = 1.8
+sourceCompatibility = 11
 
 repositories {
   mavenCentral()
@@ -33,10 +33,10 @@ repositories {
 }
 
 dependencies {
-  compile('org.springframework.boot:spring-boot-starter-data-jpa')
-  compile('org.springframework.boot:spring-boot-starter-web')
-  runtime('mysql:mysql-connector-java')
+  implementation('org.springframework.boot:spring-boot-starter-data-jpa')
+  implementation('org.springframework.boot:spring-boot-starter-web')
+  runtimeOnly('mysql:mysql-connector-java')
   compileOnly('org.springframework.boot:spring-boot-configuration-processor')
   compileOnly('org.projectlombok:lombok')
-  testCompile('org.springframework.boot:spring-boot-starter-test')
+  testImplementation('org.springframework.boot:spring-boot-starter-test')
 }

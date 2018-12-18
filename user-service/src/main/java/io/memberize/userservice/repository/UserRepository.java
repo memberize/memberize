@@ -1,4 +1,4 @@
-package io.memberize.userservice;
+package io.memberize.userservice.repository;
 
 import io.memberize.userservice.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
