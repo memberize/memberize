@@ -27,6 +27,13 @@ public class User {
 	@JsonProperty("last_name")
 	private String lastName;
 
+	public User(String email, String password, String firstName, String lastName) {
+		this.email = email;
+		this.password = password;
+		this.firstName = firstName;
+		this.lastName = lastName;
+	}
+
 	public long getId() {
 		return id;
 	}
