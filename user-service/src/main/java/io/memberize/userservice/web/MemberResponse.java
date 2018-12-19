@@ -3,13 +3,13 @@ package io.memberize.userservice.web;
 import com.fasterxml.jackson.annotation.JsonInclude;
 
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
-public class UserResponse {
+public class MemberResponse {
 	private String message;
 
-	public UserResponse() {
+	public MemberResponse() {
 	}
 
-	public UserResponse(String message) {
+	public MemberResponse(String message) {
 		this.message = message;
 	}
 

@@ -11,14 +11,13 @@ import javax.persistence.Id;
 
 @Entity
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
-public class User {
+public class Member {
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private long id;
 
 	private String email;
 
-	@JsonIgnore
 	private String password;
 
 	@JsonProperty("first_name")
@@ -27,7 +26,10 @@ public class User {
 	@JsonProperty("last_name")
 	private String lastName;
 
-	public User(String email, String password, String firstName, String lastName) {
+	public Member() {
+	}
+
+	public Member(String email, String password, String firstName, String lastName) {
 		this.email = email;
 		this.password = password;
 		this.firstName = firstName;
